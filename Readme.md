@@ -7,10 +7,17 @@
 - To run spring boot application by Maven: `$ mvn spring-boot:run` Default port is 8080.
 - To change default port, use the following ways:
     + change property server.port in `application.properties` file or 
+
+    ```yaml
     server:
         port: <port-number>
+    ```
+
     in `application.yml`
-    + Using command line option: `$ java -jar target/web-thymeleaf-1.0-SNAPSHOT.jar --server.port=<port-number>` or
+    + Using command line option: 
+    
+    `$ java -jar target/web-thymeleaf-1.0-SNAPSHOT.jar --server.port=<port-number>` or
+
     `$ java -jar -Dserver.port=<port-number> target/web-thymeleaf-1.0.SNAPSHOT.jar`
 
 - @Value("${welcome.username}") will refer to variable welcome.username in `application.properties` or `application.yml`
