@@ -1,5 +1,5 @@
 ### Note for create Spring boot application with Thymeleaf
-===
+==
 
 - Define variable on pom.xml file inside <properties> pair tag. Access these variable by syntax: ${variable.here}
 - For Thymeleaf, have to put template files into src/main/resources/templates
@@ -19,8 +19,7 @@
 Query String is not `required`, so if it absent in the request, the default value "" is used.
 
 - To deploy WAR file to Tomcat
-**Note**
-In Spring Boot, the new final executable JAR file with embedded server solution may not suitable in all production environments, especially the deployment team (a team with good knowledge of server optimization and monitoring skills, but lack of, the development experience), they want full control of the server, and they don’t touch code, so, we need a traditional WAR file.
+**Note**: In Spring Boot, the new final executable JAR file with embedded server solution may not suitable in all production environments, especially the deployment team (a team with good knowledge of server optimization and monitoring skills, but lack of, the development experience), they want full control of the server, and they don’t touch code, so, we need a traditional WAR file.
 
 => Update the @SpringBootApplication class to extend SpringBootServletInitializer, and override the configure method.
 
